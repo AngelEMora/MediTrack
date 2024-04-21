@@ -1,0 +1,195 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar {
+    background-color: white;
+    overflow: hidden;
+  }
+  
+  .navbar a {
+    float: right;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+  }
+  
+  .navbar a:hover {
+    background-color: #B2DEF9;
+  }
+  
+  .navbar img {
+    float: left;
+    padding: 10px;
+    height: 100px;
+  }
+
+  .container-inicio {
+    background-color: #c3d6e0;
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    width: 1630px; /* Ancho fijo del contenedor */
+    height: 400px; /* Alto fijo del contenedor */
+}
+
+.img-inicio {
+    flex: 0 0 auto;
+    margin-right: 10px;
+    margin-left: 40px;
+    margin-top: 30px;
+
+}
+
+.img-inicio img {
+    /* max-width: 100%;
+    height: auto; */
+
+    height: 570px;
+    width: auto;
+}
+
+.textos {
+    flex: 1; /* El resto del espacio disponible */
+    padding-left: 30px;
+}
+
+.textos h1, 
+.textos h2, 
+.textos h3, 
+.textos p {
+    margin: 0 0 10px 0; /* Espacio inferior entre los elementos */
+    
+}
+
+.textos h1 {
+    font-size: 90px; 
+    text-align: center;
+}
+.textos h2{
+    font-size: 40px; 
+    
+}
+
+.textos p {
+    text-align: justify; 
+}
+
+/* login  */
+
+.login-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #c3d6e0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+/* Estilos del formulario */
+.login-form,
+.register-form {
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 50%;
+    padding: 10px;
+    margin: 1px 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+ 
+/* registro */
+
+.register-container {
+    display: flex;
+    height: 100%;
+    margin-top: 40px;
+}
+
+.form-registro {
+    flex: 1; /* El formulario ocupará la mitad del contenedor */
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #c3d6e0;
+    border-radius: 2%;
+    margin-left: 20px;
+   
+
+}
+
+.form-registro h2 {
+    margin-top: 0;
+    margin-left: 20px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.register-form {
+    width: 100%; /* Ancho completo del formulario */
+}
+
+.register-form label {
+    display: block; /* Mostrar las etiquetas en una línea separada */
+    margin-bottom: 5px; /* Espacio entre etiqueta y campo de entrada */
+    margin-left: 20px;
+}
+
+.register-form input,
+.register-form select {
+    width: calc(80% - 20px); 
+    padding: 6px; 
+    margin-bottom: 10px; 
+    box-sizing: border-box; /* Incluir padding y border en el ancho total */
+    margin-left: 20px;
+}
+
+.register-form button {
+    width: 30%; /* Botón ocupa el ancho completo */
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.img-registro {
+    flex: 1; /* La imagen ocupará la otra mitad del contenedor */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-registro img {
+    max-width: 100%; /* Asegura que la imagen no supere el ancho del contenedor */
+    height: auto;
+}
