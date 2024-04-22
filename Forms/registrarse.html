@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediTrack Quirófano - Registro</title>
+    <link rel="stylesheet" href="/MediTrack/styles.css">
+</head>
+<body>
+    <div class="register-container">
+
+        <div class="form-registro">
+
+        <h2>Registro</h2>
+        <form class="register-form" action="#" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required>
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+            <select name="occupation" id="ocupacion" required>
+                <option value="Ocupacion" disabled selected>Ocupacion</option>
+                <option value="doctor">Doctor</option>
+                <option value="doctor">Enfermero</option>
+                <option value="doctor">Pasante</option>
+                <option value="paciente">Paciente</option>
+            </select>
+            <label for="contrasena">Contraseña:</label>
+            <input type="password" id="contrasena" name="contrasena" required>
+            <label for="confirmar-contrasena">Confirmar Contraseña:</label>
+            <input type="password" id="confirmar-contrasena" name="confirmar-contrasena" required>
+            <button type="submit">Registrarse</button>
+        </form>
+    </div>
+
+    <div class="img-registro">
+        <img src="../Images/Registro.png" alt="Registro-img">
+    </div>
+    </div>
+
+</body>
+</html>
