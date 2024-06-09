@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Medicamentos</title>
+    <link rel="stylesheet" href="./forms.css">
+</head>
+
+<body>
+    <div class="container">
+        <form class="form" action="procesar_formulario.php" method="post">
+            <h2>Medicamentos</h2>
+            <p>Por favor completa todos los campos</p>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="nombreMedicamento">Nombre del Medicamento</label>
+                    <input type="text" id="nombreMedicamento" name="nombreMedicamento" class="box">
+                </div>
+
+                <div class="form-group">
+                    <label for="tipoMedicamento">Tipo de Medicamento</label>
+                    <input type="text" id="tipoMedicamento" name="tipoMedicamento" class="box">
+                </div>
+
+                <div class="form-group">
+                    <label for="cantidadDisponible">Cantidad Disponible</label>
+                    <input type="number" id="cantidadDisponible" name="cantidadDisponible" class="box">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="movimiento">Movimiento</label>
+                    <input type="text" id="movimiento" name="movimiento" class="box">
+                </div>
+
+                <div class="form-group">
+                    <label for="fechaVencimiento">Fecha de Vencimiento</label>
+                    <input type="date" id="fechaVencimiento" name="fechaVencimiento" class="box">
+                </div>
+
+                <div class="form-group">
+                    <label for="distribuidor">Distribuidor</label>
+                    <input type="text" id="distribuidor" name="distribuidor" class="box">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="puntosReorden">Puntos de Reorden</label>
+                    <input type="number" id="puntosReorden" name="puntosReorden" class="box">
+                </div>
+            </div>
+
+            <input type="submit" value="Enviar" class="submit">
+        </form>
+
+        <div class="info">
+            <img src="/MediTrack/Images/MediTracklogo.png" class="img-1" alt="">
+            <div class="location">
+                <div class="icons">
+                    <ion-icon name="location-outline" class="icono"></ion-icon>
+                    <p>Carretera Mella No. 1 en la ciudad de San Pedro de Macorís, RD.</p>
+                </div>
+                <div class="icons">
+                    <ion-icon name="call-outline" class="icono"></ion-icon>
+                    <p>809-529-7022</p>
+                </div>
+                <div class="icons">
+                    <ion-icon name="mail-outline" class="icono"></ion-icon>
+                    <p>hospitaldr.antoniomusa@hotmail.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
+

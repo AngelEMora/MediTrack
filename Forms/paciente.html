@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Paciente Page</title>
+    <link rel="stylesheet" href="./forms.css">
+</head>
+
+<body>
+    <div class="container">
+        <form class="form" action="procesar_formulario.php" method="post">
+            <h2>Paciente</h2>
+            <p>
+                Agradecemos tu dedicación al completar este formulario, 
+                 que nos ayudará a proporcionar el mejor cuidado posible a 
+                 nuestros pacientes. La información recopilada será fundamental 
+                  comprender mejor las necesidades médicas y garantizar un tratamiento
+                   efectivo. Por favor, asegúrate de completar todos los campos 
+                   requeridos con la información más precisa y actualizada disponible
+            </p>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="nombre">Nombre del Paciente</label>
+                    <input type="text" id="nombre" name="nombre" class="box">
+                </div>
+
+                <div class="form-group">
+                    <label for="fechaNacimiento">Fecha de Nacimiento</label>
+                    <input type="date" id="fechaNacimiento" name="fechaNacimiento" class="box">
+                </div>
+
+                <div class="form-group">
+                    <label for="sexo">Sexo</label>
+                    <select id="sexo" name="sexo" class="box">
+                        <option value="">Selecciona tu sexo</option>
+                        <option value="F">Femenino</option>
+                        <option value="M">Masculino</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="edad">Edad</label>
+                    <input type="number" id="edad" name="edad" class="box">
+                </div>
+
+                <div class="form-group">
+                    <label for="identificacion">Identificación</label>
+                    <input type="text" id="identificacion" name="identificacion" class="box">
+                </div>
+
+                <div class="form-group">
+                    <label for="nacionalidad">Nacionalidad</label>
+                    <input type="text" id="nacionalidad" name="nacionalidad" class="box">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="telefono">Teléfono</label>
+                    <input type="text" id="telefono" name="telefono" class="box">
+                </div>
+
+                <div class="form-group">
+                    <label for="tipoSanguineo">Tipo Sanguíneo</label>
+                    <select id="tipoSanguineo" name="tipoSanguineo" class="box">
+                        <option value="">Selecciona tu tipo sanguíneo</option>
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="AB">AB</option>
+                        <option value="O">O</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="seguroMedico">Seguro Médico</label>
+                    <input type="number" id="seguroMedico" name="seguroMedico" class="box">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="historialMedico">Historial Médico</label>
+                    <textarea id="historialMedico" name="historialMedico" class="box"></textarea>
+                </div>
+            </div>
+
+            <input type="submit" value="Enviar" class="submit">
+        </form>
+
+        <div class="info">
+            <img src="/MediTrack/Images/MediTracklogo.png" class="img-1" alt="">
+            <div class="location">
+                <div class="icons">
+                    <ion-icon name="location-outline" class="icono"></ion-icon>
+                    <p>Carretera Mella No. 1 en la ciudad de San Pedro de Macorís, RD.</p>
+                </div>
+                <div class="icons">
+                    <ion-icon name="call-outline" class="icono"></ion-icon>
+                    <p>809-529-7022</p>
+                </div>
+                <div class="icons">
+                    <ion-icon name="mail-outline" class="icono"></ion-icon>
+                    <p>hospitaldr.antoniomusa@hotmail.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
+
