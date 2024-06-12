@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Inventario de Medicamentos para Cirugía</title>
+    <link rel="stylesheet" href="./forms.css">
+</head>
+
+<body>
+    <div class="container">
+        <form class="form" action="procesar_formulario.php" method="post">
+            <h2>Inventario de Medicamentos para Cirugía</h2>
+            <p>Por favor completa todos los campos</p>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="cirugia">Cirugía</label>
+                    <select id="cirugia" name="cirugia" class="box">
+                        <option value="">Selecciona la cirugía</option>
+                        <!-- Aquí puedes cargar dinámicamente las cirugías disponibles desde la base de datos -->
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="medicamento">Medicamento</label>
+                    <select id="medicamento" name="medicamento" class="box">
+                        <option value="">Selecciona el medicamento</option>
+                        <!-- Aquí puedes cargar dinámicamente los medicamentos disponibles desde la base de datos -->
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="cantidad">Cantidad Utilizada</label>
+                    <input type="number" id="cantidad" name="cantidad" class="box">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="observaciones">Observaciones</label>
+                    <textarea id="observaciones" name="observaciones" class="box"></textarea>
+                </div>
+            </div>
+
+            <input type="submit" value="Enviar" class="submit">
+        </form>
+
+        <div class="info">
+            <img src="/MediTrack/Images/MediTracklogo.png" class="img-1" alt="">
+            <div class="location">
+                <div class="icons">
+                    <ion-icon name="location-outline" class="icono"></ion-icon>
+                    <p>Carretera Mella No. 1 en la ciudad de San Pedro de Macorís, RD.</p>
+                </div>
+                <div class="icons">
+                    <ion-icon name="call-outline" class="icono"></ion-icon>
+                    <p>809-529-7022</p>
+                </div>
+                <div class="icons">
+                    <ion-icon name="mail-outline" class="icono"></ion-icon>
+                    <p>hospitaldr.antoniomusa@hotmail.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

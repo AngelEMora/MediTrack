@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Calendario de Cirugías</title>
+    <link rel="stylesheet" href="./forms.css">
+</head>
+
+<body>
+    <div class="container">
+        <form class="form" action="procesar_formulario.php" method="post">
+            <h2>Calendario de Cirugías</h2>
+            <p>Por favor completa todos los campos</p>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="paciente">Paciente</label>
+                    <select id="paciente" name="paciente" class="box">
+                        <option value="">Selecciona el paciente</option>
+                        <!-- Aquí puedes cargar dinámicamente los pacientes disponibles desde la base de datos -->
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="procedimiento">Procedimiento Quirúrgico</label>
+                    <select id="procedimiento" name="procedimiento" class="box">
+                        <option value="">Selecciona el procedimiento quirúrgico</option>
+                        <!-- Aquí puedes cargar dinámicamente los procedimientos quirúrgicos disponibles desde la base de datos -->
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="doctor">Doctor</label>
+                    <select id="doctor" name="doctor" class="box">
+                        <option value="">Selecciona el doctor</option>
+                        <!-- Aquí puedes cargar dinámicamente los doctores disponibles desde la base de datos -->
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="quirofano">Quirófano</label>
+                    <select id="quirofano" name="quirofano" class="box">
+                        <option value="">Selecciona el quirófano</option>
+                        <!-- Aquí puedes cargar dinámicamente los quirófanos disponibles desde la base de datos -->
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="fechaHora">Fecha y Hora de la Cirugía</label>
+                    <input type="datetime-local" id="fechaHora" name="fechaHora" class="box">
+                </div>
+
+                <div class="form-group">
+                    <label for="estado">Estado</label>
+                    <select id="estado" name="estado" class="box">
+                        <option value="">Selecciona el estado de la cirugía</option>
+                        <!-- Aquí puedes cargar dinámicamente los estados disponibles desde la base de datos -->
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="observaciones">Observaciones</label>
+                    <textarea id="observaciones" name="observaciones" class="box"></textarea>
+                </div>
+            </div>
+
+            <input type="submit" value="Enviar" class="submit">
+        </form>
+
+        <div class="info">
+            <img src="/MediTrack/Images/MediTracklogo.png" class="img-1" alt="">
+            <div class="location">
+                <div class="icons">
+                    <ion-icon name="location-outline" class="icono"></ion-icon>
+                    <p>Carretera Mella No. 1 en la ciudad de San Pedro de Macorís, RD.</p>
+                </div>
+                <div class="icons">
+                    <ion-icon name="call-outline" class="icono"></ion-icon>
+                    <p>809-529-7022</p>
+                </div>
+                <div class="icons">
+                    <ion-icon name="mail-outline" class="icono"></ion-icon>
+                    <p>hospitaldr.antoniomusa@hotmail.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
